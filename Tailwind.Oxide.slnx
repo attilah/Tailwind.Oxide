@@ -1,6 +1,5 @@
 <Solution>
   <Folder Name="/bindings/">
-    <Project Path="bindings/Tailwind.Oxide.Native.browser-wasm/Tailwind.Oxide.Native.browser-wasm.csproj" />
     <Project Path="bindings/Tailwind.Oxide.Native.freebsd-x64/Tailwind.Oxide.Native.freebsd-x64.csproj" />
     <Project Path="bindings/Tailwind.Oxide.Native.linux-arm-gnueabihf/Tailwind.Oxide.Native.linux-arm-gnueabihf.csproj" />
     <Project Path="bindings/Tailwind.Oxide.Native.linux-arm/Tailwind.Oxide.Native.linux-arm.csproj" />
@@ -15,5 +14,8 @@
   </Folder>
   <Folder Name="/src/">
     <Project Path="src/Tailwind.Oxide/Tailwind.Oxide.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Tailwind.Oxide.Tests/Tailwind.Oxide.Tests.csproj" />
   </Folder>
 </Solution>

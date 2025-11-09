@@ -4,11 +4,11 @@
 [![CD](https://github.com/attilah/Tailwind.Oxide/actions/workflows/cd.yml/badge.svg)](https://github.com/attilah/Tailwind.Oxide/actions/workflows/cd.yml)
 [![NuGet](https://img.shields.io/nuget/v/Tailwind.Oxide.svg)](https://www.nuget.org/packages/Tailwind.Oxide)
 [![Downloads](https://img.shields.io/nuget/dt/Tailwind.Oxide.svg)](https://www.nuget.org/packages/Tailwind.Oxide)
-[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](#license)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](#license)
 
 Tailwind Oxide is a managed .NET wrapper over the Tailwind CSS Oxide compiler’s C Foreign Function Interface, exposing a friendly API surface while preserving Tailwind’s native performance on every supported runtime. Native binaries are distributed as per-RID NuGet packages so consuming apps automatically pick up the right artifact.
 
-> The underlying compiler and native artifacts live in the Tailwind Labs repository: https://github.com/tailwindlabs/tailwindcss-oxide
+> The underlying compiler and native artifacts live in the [Tailwind Labs](https://github.com/tailwindlabs/tailwindcss) repository.
 
 ## Build
 
@@ -41,4 +41,4 @@ Each native project packs a runtime-specific binary located under `runtimes/<rid
 
 ## License
 
-Tailwind Oxide is distributed under the matching MIT license of TailwindCSS.
+Tailwind Oxide is distributed under the matching MIT license of Tailwind CSS.
