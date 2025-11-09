@@ -1,0 +1,19 @@
+<Solution>
+  <Folder Name="/bindings/">
+    <Project Path="bindings/Tailwind.Oxide.Native.browser-wasm/Tailwind.Oxide.Native.browser-wasm.csproj" />
+    <Project Path="bindings/Tailwind.Oxide.Native.freebsd-x64/Tailwind.Oxide.Native.freebsd-x64.csproj" />
+    <Project Path="bindings/Tailwind.Oxide.Native.linux-arm-gnueabihf/Tailwind.Oxide.Native.linux-arm-gnueabihf.csproj" />
+    <Project Path="bindings/Tailwind.Oxide.Native.linux-arm/Tailwind.Oxide.Native.linux-arm.csproj" />
+    <Project Path="bindings/Tailwind.Oxide.Native.linux-arm64-musl/Tailwind.Oxide.Native.linux-arm64-musl.csproj" />
+    <Project Path="bindings/Tailwind.Oxide.Native.linux-arm64/Tailwind.Oxide.Native.linux-arm64.csproj" />
+    <Project Path="bindings/Tailwind.Oxide.Native.linux-x64-musl/Tailwind.Oxide.Native.linux-x64-musl.csproj" />
+    <Project Path="bindings/Tailwind.Oxide.Native.linux-x64/Tailwind.Oxide.Native.linux-x64.csproj" />
+    <Project Path="bindings/Tailwind.Oxide.Native.osx-arm64/Tailwind.Oxide.Native.osx-arm64.csproj" />
+    <Project Path="bindings/Tailwind.Oxide.Native.osx-x64/Tailwind.Oxide.Native.osx-x64.csproj" />
+    <Project Path="bindings/Tailwind.Oxide.Native.win-arm64/Tailwind.Oxide.Native.win-arm64.csproj" />
+    <Project Path="bindings/Tailwind.Oxide.Native.win-x64/Tailwind.Oxide.Native.win-x64.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/Tailwind.Oxide/Tailwind.Oxide.csproj" />
+  </Folder>
+</Solution>

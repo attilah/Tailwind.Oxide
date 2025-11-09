@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <RuntimeIdentifier>win-arm64</RuntimeIdentifier>
+    <PackageId>$(NativePackageIdPrefix).$(RuntimeIdentifier)</PackageId>
+    <Description>Windows arm64 native binaries for Tailwind.Oxide</Description>
+    <TailwindOxideNativeLibraryName>tailwind_cffi.dll</TailwindOxideNativeLibraryName>
+  </PropertyGroup>
+</Project>

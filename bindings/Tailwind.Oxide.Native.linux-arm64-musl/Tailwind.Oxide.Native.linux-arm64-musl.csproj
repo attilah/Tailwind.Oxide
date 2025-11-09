@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <RuntimeIdentifier>linux-arm64-musl</RuntimeIdentifier>
+    <PackageId>$(NativePackageIdPrefix).$(RuntimeIdentifier)</PackageId>
+    <Description>Linux arm64 musl native binaries for Tailwind.Oxide</Description>
+    <TailwindOxideNativeLibraryName>libtailwind_cffi.so</TailwindOxideNativeLibraryName>
+  </PropertyGroup>
+</Project>

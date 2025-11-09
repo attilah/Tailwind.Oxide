@@ -1,0 +1,48 @@
+<Project>
+  <PropertyGroup>
+    <Version>0.1.0</Version>
+    <OxideVersion>4.1.17</OxideVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <ArtifactsDir>$(MSBuildThisFileDirectory)/artifacts</ArtifactsDir>
+    <PackageOutputPath>$(ArtifactsDir)/nuget</PackageOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Company>Tailwind Oxide</Company>
+    <Authors>Tailwind Oxide</Authors>
+    <Copyright>Copyright (c) 2025 Tailwind Oxide</Copyright>
+    <PackageIcon>logo.png</PackageIcon>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>tailwind;tailwindcss;oxide</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <RepositoryUrl>https://github.com/attilah/Tailwind.Oxide</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/attilah/Tailwind.Oxide</PackageProjectUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)assets/logo.png" Pack="true" PackagePath="/" />
+    <None Include="$(MSBuildThisFileDirectory)assets/README.md" Pack="true" PackagePath="/" />
+  </ItemGroup>
+</Project>

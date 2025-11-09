@@ -1,0 +1,32 @@
+<Project>
+  <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" Condition="'' != $([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />
+
+  <PropertyGroup>
+    <Version>$(OxideVersion)</Version>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <PackageTags>$(PackageTags);native</PackageTags>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <NativePackageIdPrefix>Tailwind.Oxide.Native</NativePackageIdPrefix>
+    <NoWarn>$(NoWarn);NU5128</NoWarn>
+    <IncludeSymbols>false</IncludeSymbols>
+  </PropertyGroup>
+
+   <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)../runtimes/$(RuntimeIdentifier)/$(TailwindOxideNativeLibraryName)">
+      <PackagePath>runtimes/$(RuntimeIdentifier)/native/</PackagePath>
+      <Pack>true</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>runtimes/$(RuntimeIdentifier)/native/$(TailwindOxideNativeLibraryName)</Link>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="buildTransitive/$(NativePackageIdPrefix).$(RuntimeIdentifier).targets">
+      <PackagePath>buildTransitive/</PackagePath>
+      <Pack>true</Pack>
+    </Content>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <RuntimeIdentifier>browser-wasm</RuntimeIdentifier>
+    <OutputType>Library</OutputType>
+    <PackageId>$(NativePackageIdPrefix).$(RuntimeIdentifier)</PackageId>
+    <Description>Browser WASM artifacts for Tailwind.Oxide</Description>
+    <TailwindOxideNativeLibraryName>tailwindcss-oxide.wasm32-wasi.wasm</TailwindOxideNativeLibraryName>
+  </PropertyGroup>
+</Project>

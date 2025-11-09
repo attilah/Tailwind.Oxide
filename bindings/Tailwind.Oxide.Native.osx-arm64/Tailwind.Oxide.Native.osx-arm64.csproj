@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <RuntimeIdentifier>osx-arm64</RuntimeIdentifier>
+    <PackageId>$(NativePackageIdPrefix).$(RuntimeIdentifier)</PackageId>
+    <Description>macOS arm64 native binaries for Tailwind.Oxide</Description>
+    <TailwindOxideNativeLibraryName>libtailwind_cffi.dylib</TailwindOxideNativeLibraryName>
+  </PropertyGroup>
+</Project>

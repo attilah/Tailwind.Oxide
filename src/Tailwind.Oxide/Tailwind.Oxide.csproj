@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="../../bindings/Tailwind.Oxide.Native.browser-wasm/Tailwind.Oxide.Native.browser-wasm.csproj" />
+    <ProjectReference Include="../../bindings/Tailwind.Oxide.Native.freebsd-x64/Tailwind.Oxide.Native.freebsd-x64.csproj" />
+    <ProjectReference Include="../../bindings/Tailwind.Oxide.Native.linux-arm/Tailwind.Oxide.Native.linux-arm.csproj" />
+    <ProjectReference Include="../../bindings/Tailwind.Oxide.Native.linux-arm-gnueabihf/Tailwind.Oxide.Native.linux-arm-gnueabihf.csproj" />
+    <ProjectReference Include="../../bindings/Tailwind.Oxide.Native.linux-arm64/Tailwind.Oxide.Native.linux-arm64.csproj" />
+    <ProjectReference Include="../../bindings/Tailwind.Oxide.Native.linux-arm64-musl/Tailwind.Oxide.Native.linux-arm64-musl.csproj" />
+    <ProjectReference Include="../../bindings/Tailwind.Oxide.Native.linux-x64/Tailwind.Oxide.Native.linux-x64.csproj" />
+    <ProjectReference Include="../../bindings/Tailwind.Oxide.Native.linux-x64-musl/Tailwind.Oxide.Native.linux-x64-musl.csproj" />
+    <ProjectReference Include="../../bindings/Tailwind.Oxide.Native.osx-arm64/Tailwind.Oxide.Native.osx-arm64.csproj" />
+    <ProjectReference Include="../../bindings/Tailwind.Oxide.Native.osx-x64/Tailwind.Oxide.Native.osx-x64.csproj" />
+    <ProjectReference Include="../../bindings/Tailwind.Oxide.Native.win-arm64/Tailwind.Oxide.Native.win-arm64.csproj" />
+    <ProjectReference Include="../../bindings/Tailwind.Oxide.Native.win-x64/Tailwind.Oxide.Native.win-x64.csproj" />
+  </ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+</Project>
