@@ -1,6 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
-    <ProjectReference Include="../../bindings/Tailwind.Oxide.Native.browser-wasm/Tailwind.Oxide.Native.browser-wasm.csproj" />
     <ProjectReference Include="../../bindings/Tailwind.Oxide.Native.freebsd-x64/Tailwind.Oxide.Native.freebsd-x64.csproj" />
     <ProjectReference Include="../../bindings/Tailwind.Oxide.Native.linux-arm/Tailwind.Oxide.Native.linux-arm.csproj" />
     <ProjectReference Include="../../bindings/Tailwind.Oxide.Native.linux-arm-gnueabihf/Tailwind.Oxide.Native.linux-arm-gnueabihf.csproj" />
