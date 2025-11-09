@@ -1,0 +1,70 @@
+name: PR Validation
+
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - opened
+      - synchronize
+      - reopened
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: 1
+  DOTNET_NOLOGO: true
+  DOTNET_MULTILEVEL_LOOKUP: 0
+
+jobs:
+  build-test:
+    name: Build & Test
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-latest
+          - windows-latest
+          - macos-latest
+          - windows-11-arm
+          - ubuntu-24.04-arm
+    steps:
+      - name: Harden-Runner
+        uses: step-security/harden-runner@v2.13.2
+        with:
+          egress-policy: audit
+
+      - name: Checkout
+        uses: actions/checkout@v5.0.0
+
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v5.0.0
+        with:
+          global-json-file: global.json
+          cache: true
+
+      - name: Restore dependencies
+        run: dotnet restore Tailwind.Oxide.slnx
+
+      - name: Build
+        run: dotnet build Tailwind.Oxide.slnx --configuration Release --no-restore
+
+      - name: Test
+        run: >
+          dotnet test Tailwind.Oxide.slnx
+          --configuration Release
+          --no-build
+          --logger "trx;LogFileName=test-results.trx"
+          --results-directory "artifacts/test-results/${{ matrix.os }}"
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results-${{ matrix.os }}
+          path: artifacts/test-results/${{ matrix.os }}
+          if-no-files-found: warn

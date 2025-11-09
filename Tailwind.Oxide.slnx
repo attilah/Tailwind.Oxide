@@ -16,4 +16,7 @@
   <Folder Name="/src/">
     <Project Path="src/Tailwind.Oxide/Tailwind.Oxide.csproj" />
   </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Tailwind.Oxide.Tests/Tailwind.Oxide.Tests.csproj" />
+  </Folder>
 </Solution>
